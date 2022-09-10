@@ -15,7 +15,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
@@ -32,6 +32,10 @@
               <a class="nav-link" href="carrito.html">Carrito</a>
             </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" >
+            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+          </form>
         </div>
       </div>
     </nav>
@@ -43,16 +47,15 @@
       <main class="principal">
         <div class="cart-preview">
           <div class="cart-item">
-            <img src="img/filgo.jpg" alt="product" />
+            <img src="img/filgo.jpg" alt="producto filgo" />
             <div>
               <div>
                 <div class="name">Lapicera Filgo</div>
-                <div class="price"><span class="discounted">$54.99</span><span>$94.99</span></div>
+                <div class="price"><span class="discounted">$850</span></div>
               </div>
               <div class="qty-selector">
-                <span class="material-icons">remove</span>
-                <span class="qty">1</span>
-                <span class="material-icons">add</span>
+                <span class="material-icons">Eliminar</span>
+                
               </div>
             </div>
           </div>
@@ -61,78 +64,71 @@
             <div>
               <div>
                 <div class="name">Resaltadores Pelikan</div>
-                <div class="price"><span class="discounted">$74.99</span><span>$124.99</span></div>
+                <div class="price"><span class="discounted">$800</span></div>
               </div>
               <div class="qty-selector">
-                <span class="material-icons">remove</span>
-                <span class="qty">1</span>
-                <span class="material-icons">add</span>
+                <span class="material-icons">Eliminar</span>
               </div>
             </div>
           </div>
           <div class="shipping">
-            <span>Shipping</span><span>$19</span>
+            <span>Envio</span><span>$750</span>
           </div>
           <div class="total">
-            <span>Total</span><span>$148.98</span>
+            <span>Total</span>$2400<span></span>
           </div>
         </div>
         <form action="#" id="checkout-form">
           <section>
-            <h3>Contact information</h3>
+            <h3>Informacion de Contacto</h3>
             <div class="form-group">
               <label for="email">E-mail</label>
               <div>
                 <span class="material-icons"></span>
-                <input type="email" id="email" placeholder="Enter your email..."/>
+                <input type="email" id="email" />
               </div>
             </div>
             <div class="form-group">
               <label for="phone">Telefono</label>
               <div>
-                
-                <input type="number" id="phone" placeholder="Enter your phone..."/>
+                <input type="number" id="phone" />
               </div>
             </div>
           </section>
           <section>
-            <h3>Shipping address</h3>
+            <h3>Direccion de Envio</h3>
             <div class="form-group">
               <label for="fullname">Nombre Completo</label>
               <div>
-                <span class="material-icons">account_circle</span>
-                <input type="text" id="fullname" placeholder="Your full name..."/>
+                <input type="text" id="fullname" />
               </div>
             </div>
             <div class="form-group">
               <label for="address">Direccion</label>
-              <div>
-                <span class="material-icons">home</span>
-                <input type="text" id="address" placeholder="Your address..."/>
+              <div>    
+                <input type="text" id="address" />
               </div>
             </div>
             <div class="form-group">
               <label for="city">Ciudad</label>
               <div>
-                <span class="material-icons"></span>
-                <input type="text" id="city" placeholder="Your city..."/>
+                <input type="text" id="city" />
               </div>
             </div>
             <div class="form-groups">
               <div class="form-group">
               <label for="country">Pais</label>
               <div>
-                <span class="material-icons"></span>
                 <select>
-                  <option disabled selected>tu pais</option>
+                  <option disabled selected></option>
+                  <option>Argentina</option>
                 </select>
               </div>
             </div>
               <div class="form-group">
                 <label for="postal-code">Codigo Postal</label>
-                <div>
-                  <span class="material-icons"></span>
-                  <input type="text" id="postal-code" placeholder="Your postal code..."/>
+                <div> 
+                  <input type="text" id="postal-code" />
                 </div>
 </div>
             </div>

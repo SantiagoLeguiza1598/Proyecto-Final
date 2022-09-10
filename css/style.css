@@ -1,19 +1,4 @@
-.card {
-  background: rgb(253, 247, 247);
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
-  transition: all 400ms ease;
-}
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.card .a {
-  text-decoration: none;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap");
 :root {
   --text-xs: 10px;
   --text-s: 12px;
@@ -29,8 +14,8 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #4E5150;
+  font-family: "Montserrat", sans-serif;
+  color: #0f0f0f;
   margin: 0;
   padding: 0;
 }
@@ -225,41 +210,29 @@ form .form-group.checkbox {
 }
 
 form > button {
-  background-color: #F2994A;
+  background-color: #e7ce0f;
   outline: none;
-  border: 1px solid #F2994A;
+  border: 1px solid #e7ce0f;
   border-radius: 12px;
-  color: #FFF;
+  color: rgb(0, 0, 0);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   padding: 17px 45px;
   float: right;
   margin-top: 24px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   align-self: flex-end;
 }
 
 form > button:hover {
   background: transparent;
-  color: #F2994A;
+  color: #e7ce0f;
 }
 
 footer {
   margin-top: 90px;
-}
-
-footer > p {
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 600;
-  color: #BDBDBD;
-  text-align: center;
-}
-
-footer > p > a {
-  font-weight: 700;
 }
 
 @media only screen and (min-width: 768px) {
@@ -267,13 +240,11 @@ footer > p > a {
     max-width: 1000px;
     padding: 0 25px;
   }
-  
   .cart-preview {
     float: right;
     margin-left: 90px;
   }
 }
-
 @media only screen and (min-width: 900px) {
   :root {
     --text-xs: 12px;
@@ -282,6 +253,37 @@ footer > p > a {
     --text-l: 36px;
     --one-em: 22px;
   }
+}
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  color: darkgoldenrod;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 10px;
+  color: darkgoldenrod;
+}
+
+.card {
+  background: rgb(253, 247, 247);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.card:a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
