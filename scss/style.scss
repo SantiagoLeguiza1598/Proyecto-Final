@@ -8,7 +8,15 @@ h1 {
   @include mixintitulos.estilos-h1;
   color: darkgoldenrod;
  
-  
+  h3 {
+    @include mixintitulos.estilos-h3;
+  }
+
+  a {
+    cursor: pointer;
+    border: none;
+    color:darkgoldenrod ;
+  } 
 
 }
 
